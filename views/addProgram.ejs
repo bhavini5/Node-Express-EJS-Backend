@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Ringtone</title>
+</head>
+<style>
+    nav {
+        width: 100%;
+        background-color: #bf97a9;
+        margin: 0.5rem;
+        display: flex;
+        align-items: center;
+        padding: 10px; /* Adds padding around the links */
+    }
+    .nav_link_active {
+            justify-content: center;
+            text-decoration: none; /* Remove underline */
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            margin: 0 10px; /* Adds space between links */
+            padding: 5px 10px; /* Adds padding around each link */
+            border: 1px solid rgb(0, 0, 0); /* Adds border around each link */
+            border-radius: 5px; /* Rounds the corners of the border */
+            background-color: #937171;
+            color: #333;
+        }    
+    a {
+        justify-content: center;
+        text-decoration: none; /* Remove underline */
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        margin: 0 10px; /* Adds space between links */
+        padding: 5px 10px; /* Adds padding around each link */
+        border: 1px solid rgb(0, 0, 0); /* Adds border around each link */
+        border-radius: 5px; /* Rounds the corners of the border */
+    }
+
+    img {
+        height: 4rem;
+        width: 5rem;
+        margin-right: 20px; /* Adds space between the image and links */
+        justify-content:left
+    }
+    table,th,td{
+            border: 1px solid black;
+            margin-top :4rem;
+
+        }
+</style>
+<body>
+    <nav>
+        <img  src="data:image/jpeg;base64,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">
+        <a href="http://localhost:8080/">Home</a>
+        <a href="http://localhost:8080/show/ringtone">Ringtones</a>
+        <!-- <a href="">Artists</a> -->
+        <a href="http://localhost:8080/show/blog">Blogs</a>
+        <a class="nav_link_active" href="http://localhost:8080/show/program">Programs</a>
+    <a  href="http://localhost:8080/employee">Employee</a>
+    <a  href="http://localhost:8080/show/user">Users</a>
+    <a  href="http://localhost:8080/show/program">Show Program</a>
+    <a  class="nav_link" href="http://localhost:8080/contact_us">Contact Us</a>
+
+    </nav>
+    <h2 style="text-align: center;">Schedule a Program</h2>
+
+    <div style="width:600px;margin:0 auto; background-color:#c29494;font-size: 24px;">
+    <form method="post" action="/<%=id%>/add/program">
+        <table align="center" border="1" width="600"  margin-top ="4rem";>
+            <tr>
+                <td>Program_id</td>
+                <td><input type="number" name="psid"></td>
+            </tr>
+            <tr>
+                <td>Employee Id</td>
+                <td ><%=id%></td>
+                <input type="hidden" name="empid" value="<%= id %>">
+            </tr>
+            <tr>
+                <td>Program Title</td>
+                <td><input type="text" name="prg_title"></td>
+            </tr>
+            <tr>
+                
+                
+                <td><label for="message">Write Your Reviews:</label><br></td>
+                <td><textarea id="message" name="description" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td>Start Time</td>
+                <td><input type="time" name="start_time"></td>
+            </tr>
+            <tr>
+                <td>End Time</td>
+                <td><input type="time" name="end_time"></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+            </tr>
+        </table>
+        <button>Submit</button>
+    </form>
+    </div>
+</body>
+</html>

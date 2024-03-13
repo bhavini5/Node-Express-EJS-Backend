@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            width: 100%;
+            background-color: #bf97a9;
+            margin: 0.5rem;
+            display: flex;
+            align-items: center;
+            padding: 10px; /* Adds padding around the links */
+        }
+        
+        .nav_link {
+            justify-content: center;
+            text-decoration: none; /* Remove underline */
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            margin: 0 10px; /* Adds space between links */
+            padding: 5px 10px; /* Adds padding around each link */
+            border: 1px solid rgb(0, 0, 0); /* Adds border around each link */
+            border-radius: 5px; /* Rounds the corners of the border */
+        }
+
+        img {
+            height: 4rem;
+            width: 5rem;
+            margin-right: 20px; /* Adds space between the image and links */
+            justify-content:left
+        }
+        .nav_link_active {
+            justify-content: center;
+            text-decoration: none; /* Remove underline */
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            margin: 0 10px; /* Adds space between links */
+            padding: 5px 10px; /* Adds padding around each link */
+            border: 1px solid rgb(0, 0, 0); /* Adds border around each link */
+            border-radius: 5px; /* Rounds the corners of the border */
+            background-color: #937171;
+            color: #333;
+        }
+        a{
+            text-decoration: none;
+            align-items: center;
+        }
+        table,th,td{
+            border: 1px solid black;
+            margin-top :4rem;
+
+        }
+        form{
+            height: 10rem;
+            width: 24rem;
+            background-color: #937171;
+            margin-left: 35%;
+            margin-top: 10rem;
+            border: 5px solid black;
+            padding: 1rem;
+        }
+        button{
+            margin: 0.7rem;
+        }
+        p{
+            font-weight: bolder;
+            margin-top: 1rem;
+            margin: 0.1rem;
+        }
+        input{
+            box-shadow: black;
+        }
+        
+        h1{
+            text-align   : center; 
+            margin-right : 6rem; 
+            padding-top   : 4rem;
+        }
+    </style>
+</head>
+    <body>
+        
+        <div>
+    <h1 style="">Login</h1>
+            <form action="http://localhost:8080/Mlogin" method="post">
+                <p>Enter username:</p>
+                <input type="text" name="name"><br>
+                <p>Enter Password:</p>
+                <input type="password" name="password"><br>
+                <button type="submit">Submit</button><br>
+            </form>
+            <a href="localhost:8080/">Don't have an account?SignUp</a>
+        </div>
+    
+        
+        
+        
+
+</body>
+</html>
